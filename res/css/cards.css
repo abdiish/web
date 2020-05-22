@@ -1,0 +1,128 @@
+.contenedor-act h3{
+    font-size: var(--titulos);
+    color: var(--color-green);
+    margin-bottom: var(--espacios);
+    text-align: center;
+    margin-top: 35px;
+}
+.contenedor-act p{
+    font-size: var(--subtitulos);
+    color: var(--color-green);
+    text-align: center;
+    font-weight: 300;
+}
+.after::after{
+    content:'';
+    display: block;
+    margin: auto;
+    margin-top: var(--espacios);
+    width: 100px;
+    height: 2px;
+    background: var(--color-green);
+    margin-bottom: var(--espacios-contenido);
+}
+.post-slider{
+   width: 100%;
+   position: relative;
+
+}
+.post-slider .post-wrapper {
+    width: 85%;
+    height: 450px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    transition: margin 1s ease;
+}
+.post-slider .post-wrapper .post {
+    height: 330px;
+    margin: 0px 10px 10px;
+    display: inline-block;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+.post-slider .post-wrapper .slider-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.post-slider .post-wrapper .post .post-info {
+    text-align: center;
+    margin: 20px 10px 10px;
+}
+.post-slider .post-wrapper .post .post-info a{
+    text-decoration: none;
+    color: black;
+}
+.post-slider .next{
+    width: auto;
+    top: 30%;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    color:  #04B431;
+    font-size: 19px;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 51, 102, 1);
+}
+.post-slider .prev {
+    width: auto;
+    top: 30%;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+    color:  #04B431;
+    font-size: 19px;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 51, 102, 1);
+}
+.post-slider .prev:hover, .next:hover{
+    color: #fff;
+}
+@media screen and (max-width: 700px){
+    .post-slider .prev {
+        padding: 10px;
+        left: 2px;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .post-slider .next {
+        padding: 10px;
+        right: 2px;
+        border-radius: 0px 3px 3px 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .contenedor-act h3{
+        font-size: 25px;
+    }
+    .contenedor-act p{
+        font-size: 12px;
+    }
+    .post-slider .prev {
+        padding: 10px;
+        left: 2px;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .post-slider .next {
+        padding: 10px;
+        right: 2px;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .post-slider .prev:hover, .next:hover{
+        color: #fff;
+    }
+}
+@media screen and (max-width: 400px){
+    .post-slider .prev {
+        padding: 10px;
+        left: 2px;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .post-slider .next {
+        padding: 10px;
+        right: 2px;
+        border-radius: 0px 3px 3px 0px;
+    }
+}

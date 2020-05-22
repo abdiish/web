@@ -1,0 +1,1 @@
+<h1 style="text-align:center;">Sesion Iniciada como Administrador</h1>

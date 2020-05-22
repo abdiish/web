@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^log-out$ res/php/user_actions/log-out.php [QSA]
+
+RewriteRule ^admin/posts$ admin/index.php?section=posts [QSA]
+
+RewriteRule ^admin/categories$ admin/index.php?section=categories [QSA]

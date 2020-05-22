@@ -1,0 +1,51 @@
+.gallery {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.images {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+}
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.at-top-of {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.575);
+}
+.at-top-of h2 {
+    position: relative;
+    top: 35%;
+    text-align: center;
+    color: #fff;
+}
+.at-top-of div {
+    position: relative;
+    display: block;
+    top: 36%;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin: auto;
+}
+@media screen and (max-width:610px) {
+    .images {
+        flex-grow: 1;
+    }
+    .none {
+        display: none
+    }
+}

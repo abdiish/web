@@ -1,0 +1,116 @@
+.ubicacion {
+    font-size: var(--titulos);
+    color: var(--color-green);
+    margin-bottom: var(--espacios);
+    text-align: center;
+    margin-top: 35px;
+}
+.after {
+    font-size: var(--subtitulos);
+    color: var(--color-green);
+    text-align: center;
+    font-weight: 300;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo-con {
+    color: #04b431;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.about-services {
+    background: #E0E0E0;
+    padding-bottom: 30px;
+}
+.servicio-cont {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind {
+    width: 45%;
+}
+.servicio-ind img {
+    width: 90%;
+}
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+.servicio-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input {
+    padding: 20px 10px;
+}
+input[type="text"], 
+input[type="email"] {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+.form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+input[type="submit"] {
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+    background-color: #fff;
+    border: 2px solid #04b431;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #04b431;
+    color: white;
+}
+.map-google iframe{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 343px;
+    background-color: #fff;
+}
+.error-block {
+    padding: 12px;
+    width: 100%;
+    background: #ffb9c5;
+    color: #721121;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    display: none;
+}
+.error {
+    font-size: 1.1em;
+}
+.success {
+    background: #c1ffb9;
+    color: #16790d;
+}
+@media screen and (max-width:900px) {
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind {
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:nth-child(1), 
+    .servicio-ind:nth-child(2) {
+        margin-bottom: 60px;
+    }
+   
+}

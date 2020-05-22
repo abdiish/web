@@ -1,0 +1,168 @@
+header {
+    width: 100%;
+    height: 600px;
+    background: url(../img/school.jpg);
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+video {
+    width: 100%;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    z-index: 2;
+}
+.nav-a {
+    background: transparent;
+    height: 90px;
+    color: #fff;
+}
+.nav-b {
+    background: #003366;
+    height:100px;
+    color:#fff;
+}
+.container-nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+}
+nav .links-ieimc a {
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+ 
+nav .links-ieimc a:hover {
+    border-bottom: 3px solid #04B431;
+    transition: 0.6s;
+}
+.logo-ieimc, .logo-ieimc img {
+    height: 80px;
+}
+
+.name-institute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-institute p {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+.name-institute a {
+    display: inline-block;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 18px;
+    color: #fff;
+    background-color: #04b431;
+    margin-top: 15px;
+    width: 150px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.name-institute a:hover {
+    background-color: #04b431;
+    border: 1px solid #04b431;
+}
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 30px;
+}
+h1::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    color: #fff;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}
+.icon {
+    display: none;  
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+
+@media screen and (max-width: 700px){
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .nav-b {
+        color: #fff;
+    }
+    .icon {
+        display: block;
+        cursor: pointer;
+    }
+    .links-ieimc {
+        position: fixed;
+        top: 90px;
+        background: #003366;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+    }
+    .links-ieimc a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+        background: #003366;
+        color:#fff;
+    }
+    :root {
+        --margenes: 30px;
+    }
+    .name-institute a {
+        margin-top: 50px;
+    }
+  
+}
+@media screen and (max-width: 500px){ 
+    .icono {
+        display: block;
+        cursor: pointer;
+    }
+    :root{
+        --espacios-contenido: 25px;
+    }
+}

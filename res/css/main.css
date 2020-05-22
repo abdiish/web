@@ -1,0 +1,32 @@
+
+@import url(header.css);
+@import url(review.css);
+@import url(cards.css);
+@import url(skew.css);
+@import url(cms.css);
+@import url(contacto.css);
+@import url(footer.css);
+/***/
+@import url(menu.css);
+@import url(primaria.css);
+@import url(p_goals.css);
+@import url(posts.css);
+
+:root {
+    --color-green: rgb(4, 180, 49);
+    --fondo: #003366;
+    --margenes: 60px;
+    --titulos: 33px;
+    --subtitulos: 18px;
+    --espacios: 10px;
+    --espacios-contenido:45px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
